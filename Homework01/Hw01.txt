@@ -1,0 +1,41 @@
+1.
+//Using another programming language, do a function whereby it returns the sum of all squares of even numbers
+//The code below is written in Kotlin
+
+fun sumOfEvenSquares(data: Array<Int>): Int {
+
+    var sum = 0
+    //so when it is even number, square that number and add it to the sum
+    for (item in data.indices) {
+        if (item % 2 == 0) {
+            sum += item * item
+        }
+    }
+    return sum
+}
+
+
+2. 
+Describe in your own words each of these major theories of computations
+
+// 
+Language Theory -> It focuses on how to convey information and computations by analysing usable data to be shown as a string of symbols, 
+by giving eaach of these symbols meaning.
+
+Automata Theory -> The study of how machines solve problems and carry out their jobs
+so that we are able to build effective functions that are computable.
+
+Computability Theory -> Although many problems have been solved using different models of computation,
+the ability of computers to do such tasks are not limitless as this remains an active field of study.
+
+Complexity Theory -> This concerns with how much resources (mostly the number of steps, time and memory) each problem or task require to complete.
+
+
+3.
+Using Lisp, Python, JavaScript, Java, Ruby, Clojure, and Swift, write lambda functions that cube a number
+
+//Python
+
+  def cube_it(num):
+    cubed_num = lambda x: (x*x*x, num)
+  
